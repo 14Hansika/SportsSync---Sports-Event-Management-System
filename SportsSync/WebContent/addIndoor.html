@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indoor Sports</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117; 
+      color: #ffffff; 
+    }
+
+    h2 {
+      color: #00bfff;
+    }
+
+    h3 {
+      color: #9dbfd4;
+    }
+
+    .card-img-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .card-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 191, 255, 0.8); 
+      color: black;
+      padding: 15px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .overlay-content h5 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .overlay-content button {
+      margin-top: 8px;
+      font-size: 14px;
+      background-color: #ffffff;
+      color: #0d1117;
+      border: none;
+      border-radius: 4px;
+      padding: 6px 12px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .overlay-content button:hover {
+      background-color: #009acd;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+    <h2 class="mb-4">Indoor Sports</h2>
+    <h3 class="mb-5">Indoor sports aren't just games—they are arenas of discipline, teamwork, and precision, where passion thrives regardless of the weather outside.</h3>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+      <!-- Tennis -->
+      <div class="col">
+        <div class="card shadow-sm border-0 bg-transparent">
+          <div class="card-img-container">
+            <img src="tenis.jpg" alt="Tennis">
+            <div class="overlay-content">
+              <h5>Tennis</h5>
+              <form action="AddSportServlet" method="post">
+                <input type="hidden" name="sport" value="Tennis">
+                <button type="submit" class="btn btn-success btn-sm">Add Sport</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shooting -->
+      <div class="col">
+        <div class="card shadow-sm border-0 bg-transparent">
+          <div class="card-img-container">
+            <img src="shooting.jpg" alt="Shooting">
+            <div class="overlay-content">
+              <h5>Shooting</h5>
+              <form action="AddSportServlet" method="post">
+                <input type="hidden" name="sport" value="Shooting">
+                <button type="submit" class="btn btn-success btn-sm">Add Sport</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chess -->
+      <div class="col">
+        <div class="card shadow-sm border-0 bg-transparent">
+          <div class="card-img-container">
+            <img src="chess.jpg" alt="Chess">
+            <div class="overlay-content">
+              <h5>Chess</h5>
+              <form action="AddSportServlet" method="post">
+                <input type="hidden" name="sport" value="Chess">
+                <button type="submit" class="btn btn-success btn-sm">Add Sport</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrom -->
+      <div class="col">
+        <div class="card shadow-sm border-0 bg-transparent">
+          <div class="card-img-container">
+            <img src="carrom.jpg" alt="Carrom">
+            <div class="overlay-content">
+              <h5>Carrom</h5>
+              <form action="AddSportServlet" method="post">
+                <input type="hidden" name="sport" value="Carrom">
+                <button type="submit" class="btn btn-success btn-sm">Add Sport</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wrestling -->
+      <div class="col">
+        <div class="card shadow-sm border-0 bg-transparent">
+          <div class="card-img-container">
+            <img src="wresling.jpg" alt="Wrestling">
+            <div class="overlay-content">
+              <h5>Wrestling</h5>
+              <form action="AddSportServlet" method="post">
+                <input type="hidden" name="sport" value="Wrestling">
+                <button type="submit" class="btn btn-success btn-sm">Add Sport</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yoga -->
+      <div class="col">
+        <div class="card shadow-sm border-0 bg-transparent">
+          <div class="card-img-container">
+            <img src="yoga.jpg" alt="Yoga">
+            <div class="overlay-content">
+              <h5>Yoga</h5>
+              <form action="AddSportServlet" method="post">
+                <input type="hidden" name="sport" value="Yoga">
+                <button type="submit" class="btn btn-success btn-sm">Add Sport</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

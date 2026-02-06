@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ground/Court</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 50px;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+        }
+        label, select, input {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background: #28a745;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Book Ground / Court</h2>
+    <form action="BookCourt" method="post">
+        <label for="date">Date:</label>
+        <input type="date" name="date" required />
+
+        <label for="time">Time:</label>
+        <input type="time" name="time" required />
+
+        <label for="maxPlayers">Max Players:</label>
+        <input type="number" name="maxPlayers" required min="2" />
+
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>

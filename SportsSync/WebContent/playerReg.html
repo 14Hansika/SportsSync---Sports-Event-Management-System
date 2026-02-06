@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Player Registration - SportSync</title>
+<style>
+    /* Base styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    /* Form container */
+    .registration-container {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        padding: 40px;
+        width: 100%;
+        max-width: 450px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Decorative element */
+    .registration-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to right, #2E8B57, #FF6B35);
+    }
+    
+    /* Heading */
+    h2 {
+        color: #2E8B57;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 28px;
+        position: relative;
+    }
+    
+    h2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: #FF6B35;
+    }
+    
+    /* Form group styling */
+    .form-group {
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    /* Labels */
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    /* Input fields */
+    input[type="text"] {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s;
+        background-color: #f9f9f9;
+    }
+    
+    input[type="text"]:focus {
+        outline: none;
+        border-color: #2E8B57;
+        box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+        background-color: white;
+    }
+    
+    input[type="text"]::placeholder {
+        color: #aaa;
+    }
+    
+    /* Button */
+    button[type="submit"] {
+        width: 100%;
+        padding: 14px;
+        background: linear-gradient(to right, #2E8B57, #1E6B45);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+    }
+    
+    button[type="submit"]:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(46, 139, 87, 0.4);
+    }
+    
+    button[type="submit"]:active {
+        transform: translateY(0);
+    }
+    
+    /* Link */
+    .login-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #2E8B57;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    
+    .login-link:hover {
+        color: #1E6B45;
+        text-decoration: underline;
+        background-color: rgba(46, 139, 87, 0.1);
+    }
+    
+    /* Form footer */
+    .form-footer {
+        text-align: center;
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        color: #666;
+        font-size: 14px;
+    }
+    
+    /* Animation for form elements */
+    .form-group {
+        animation: fadeIn 0.5s ease-out forwards;
+        opacity: 0;
+    }
+    
+    .form-group:nth-child(1) { animation-delay: 0.1s; }
+    .form-group:nth-child(2) { animation-delay: 0.2s; }
+    .form-group:nth-child(3) { animation-delay: 0.3s; }
+    .form-group:nth-child(4) { animation-delay: 0.4s; }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+        .registration-container {
+            padding: 30px 20px;
+        }
+        
+        h2 {
+            font-size: 24px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Player Registration</h2>
+        <form action="playerReg" method="post">
+            <div class="form-group">
+                <label for="pname">Name:</label>
+                <input type="text" id="pname" name="pname" placeholder="Your Name Here">
+            </div>
+            
+            <div class="form-group">
+                <label for="pemail">Email:</label>
+                <input type="text" id="pemail" name="pemail" placeholder="Your Email">
+            </div>
+            
+            <div class="form-group">
+                <label for="ppass">Password:</label>
+                <input type="text" id="ppass" name="ppass" placeholder="Enter Password">
+            </div>
+            
+            <div class="form-group">
+                <label for="pcontact">Contact:</label>
+                <input type="text" id="pcontact" name="pcontact" placeholder="Your Contact Here">
+            </div>
+            
+            <button type="submit">Register</button>
+            <a href="playerLogin.html" class="login-link">Already Registered?</a>
+        </form>
+        
+        <div class="form-footer">
+            Join thousands of players on SportSync
+        </div>
+    </div>
+</body>
+</html>

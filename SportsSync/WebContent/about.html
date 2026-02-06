@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SportSync</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2E8B57;
+            --secondary: #1E6B45;
+            --accent: #FF6B35;
+            --light: #F8F9FA;
+            --dark: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .navbar {
+            background-color: var(--primary);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1549060279-7e168fce7090?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .about-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            margin: 15px auto;
+        }
+        
+        .mission-vision {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .values-section {
+            padding: 80px 0;
+        }
+        
+        .value-item {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-heading {
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .footer-heading:after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-running me-2"></i>SportSync
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-outline-light" href="playerLogin.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-primary" href="playerReg.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About SportSync</h1>
+            <p class="lead">Connecting Sports Enthusiasts, One Game at a Time</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>SportSync was born from a simple observation: sports enthusiasts often struggle to find playing partners, organize games, and book venues in their local communities. We recognized the need for a centralized platform that could bridge this gap and make sports more accessible to everyone.</p>
+                    
+                    <p>Founded in 2023, SportSync has grown from a small startup to a thriving community platform connecting thousands of players, organizers, and sports venues across the region. Our mission is to eliminate the barriers that prevent people from enjoying their favorite sports.</p>
+                    
+                    <p>Today, we're proud to be the leading community sports booking and management system, serving players of all skill levels and helping organizers create memorable sporting experiences.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Team playing sports" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <h2 class="section-title">Our Mission & Vision</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card p-4 text-center h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To create an inclusive platform that makes sports accessible to everyone by simplifying the process of finding games, connecting with players, and booking venues. We aim to foster active lifestyles and build stronger communities through the power of sports.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 text-center h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To become the world's leading community sports platform, connecting millions of sports enthusiasts globally. We envision a future where anyone, anywhere can easily find and participate in sports activities, breaking down geographical and social barriers to physical activity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p>SportSync is a comprehensive community sports booking and management system designed to serve three main user groups:</p>
+                    
+                    <h4 class="mt-4 mb-3">For Players/Users</h4>
+                    <p>We provide an easy way for sports enthusiasts to browse available matches and tournaments in their area. Players can register for games that match their skill level and interests, view their booking status, and submit feedback about their experiences. Our platform helps players connect with like-minded individuals and stay active in their favorite sports.</p>
+                    
+                    <h4 class="mt-4 mb-3">For Organizers</h4>
+                    <p>Organizers can efficiently create and manage matches or tournaments through our platform. They can view registered players, book grounds or courts, cancel matches when necessary, and gather valuable feedback from participants. SportSync simplifies the administrative tasks of organizing sports events, allowing organizers to focus on creating great experiences.</p>
+                    
+                    <h4 class="mt-4 mb-3">For Venue Owners & Administrators</h4>
+                    <p>Our platform helps venue owners manage their facilities effectively. Administrators can add and manage different sports types, maintain location databases, track booking history, and generate reports. This comprehensive management system ensures optimal utilization of sports facilities while providing valuable insights into usage patterns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="values-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community First</h4>
+                        <p>We believe in the power of community and strive to build platforms that bring people together through shared sporting interests.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Trust & Safety</h4>
+                        <p>We prioritize the safety and security of our users, implementing measures to ensure a trustworthy environment for all sports activities.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Passion for Sports</h4>
+                        <p>Our team shares a genuine love for sports and understands the importance of physical activity in building healthy communities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-heading">SportSync</h4>
+                    <p>Connecting sports enthusiasts with venues and fellow players in their community.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="viewSports.html" class="text-white text-decoration-none">Sports</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Locations</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Sports Ave, City</li>
+                        <li><i class="fas fa-phone me-2"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@sportsync.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to get updates on new matches and venues.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-accent" type="button" style="background-color: var(--accent); color: white; border: none;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="text-center py-3">
+                <p class="mb-0">&copy; 2023 SportSync. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
